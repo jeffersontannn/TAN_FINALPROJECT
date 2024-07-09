@@ -44,8 +44,11 @@ nav ul li a:hover {
 section {
     padding: 50px 20px;
     background-color: #f0f0f0;
-    margin-bottom: 20px;
+    margin: 0 auto; /* Centering the section */
+    max-width: 800px; /* Limiting maximum width for better readability */
     border: 2px solid blue;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
 }
 
 h2 {
