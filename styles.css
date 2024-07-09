@@ -126,6 +126,15 @@ input, textarea, button {
     margin-top: 0.5rem;
 }
 
+.submit-btn {
+    background-color: #002166;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
 footer {
     background-color: #002166;
     color: #fff;
