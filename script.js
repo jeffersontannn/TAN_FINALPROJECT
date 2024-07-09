@@ -16,23 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(erase, newTextDelay);
         }
     }
-    
-<section id="contact">
-    <h2>Contact</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Send</button>
-    </form>
-}
-}
+
     function erase() {
         if (charIndex > 0) {
             typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
@@ -45,7 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(type, newTextDelay + 250);
-    });
+    setTimeout(type, newTextDelay + 250);
+});
+
+// Dynamic year for footer
+document.addEventListener("DOMContentLoaded", function() {
+    const yearSpan = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
 });
