@@ -67,6 +67,8 @@ h2 {
     max-width: 100%; /* Ensure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     margin: 0 10px;
+    display: block; /* Ensure images don't have extra space below them */
+    max-height: 300px; /* Set a maximum height to control size */
 }
 
 /* Footer styles */
