@@ -42,17 +42,15 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Section styles */
 section {
     padding: 2rem 0;
     text-align: center;
-    border: 2px solid black;
+    border: 5px solid #002166;
     background-color: #fff;
-    color: #002166;
+    color: black;
     margin: 2rem auto;
     max-width: 800px;
 }
-
 h2 {
     text-align: center;
 }
