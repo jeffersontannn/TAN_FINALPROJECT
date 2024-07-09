@@ -106,7 +106,7 @@ nav .logo h1 {
     background-color: #004d4d;
 }
 
-#about, #services, #portfolio, #contact {
+.section {
     padding: 50px 20px;
     text-align: center;
     background-color: #f9f9f9;
@@ -117,7 +117,7 @@ nav .logo h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#about h2, #services h2, #portfolio h2, #contact h2 {
+.section h2 {
     margin-bottom: 20px;
 }
 
