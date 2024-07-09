@@ -3,13 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Set background color of body to white */
-    color: black; /* Set font color of body to black */
 }
 
 /* Navigation styles */
 nav {
-    background-color: blue;
+    background-color: #002166;
+    color: #fff;
     padding: 1rem 0;
 }
 
@@ -29,7 +28,7 @@ nav .container {
 
 .logo h1 {
     margin: 0;
-    color: black; /* Black font color */
+    color: #fff; /* White font color */
 }
 
 .nav-links {
@@ -44,7 +43,7 @@ nav .container {
 }
 
 .nav-links a {
-    color: black; /* Black font color */
+    color: #fff; /* White font color */
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
@@ -58,8 +57,9 @@ nav .container {
 section {
     padding: 2rem 0;
     text-align: center;
-    border: 5px solid black; /* Black border */
-    background-color: white; /* White background */
+    border: 2px solid black; /* Black border */
+    background-color: blue; /* Blue background */
+    color: white; /* White text color */
     margin: 2rem auto;
     max-width: 800px;
 }
@@ -125,7 +125,7 @@ section h2, section p {
 /* Button styles */
 .btn {
     background-color: #002166;
-    color: white;
+    color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
@@ -147,7 +147,7 @@ section h2, section p {
     flex: 1 1 30%;
     margin: 1rem;
     padding: 1rem;
-    border: 5px solid black; /* Black border */
+    border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
 }
@@ -163,10 +163,10 @@ section h2, section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid black; /* Black border */
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 1rem;
-    background-color: white;
+    background-color: #f9f9f9;
     margin: 1rem;
 }
 
@@ -205,7 +205,7 @@ form textarea {
 
 .submit-btn {
     background-color: #002166;
-    color: white;
+    color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
@@ -215,8 +215,9 @@ form textarea {
 footer {
     text-align: center; /* Center-align text */
     padding: 20px 0; /* Padding around footer content */
-    border-top: 5px solid black; /* Top border with black color */
+    border-top: 1px solid #ddd; /* Top border with light gray color */
     width: 100%; /* Ensure the footer spans the full width of its container */
-    background-color: white; /* Set background color of footer to white */
-    color: black; /* Set font color of footer to black */
+    position: fixed; /* Fix the footer position */
+    bottom: 0; /* Position at the bottom of the viewport */
+    background-color: white; /* Optional: Set a background color */
 }
