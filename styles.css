@@ -1,14 +1,7 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
 }
 
 nav {
@@ -29,20 +22,18 @@ nav .logo h1 {
     margin-left: 20px;
 }
 
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
+.nav-links {
+    text-align: left;
 }
 
-nav .nav-links li {
-    margin: 0 10px;
+.nav-links li {
+    display: inline-block; 
+    margin-right: 15px; 
 }
 
-nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.nav-links li a {
+    color: white; 
+    text-decoration: none; 
 }
 
 #home {
@@ -50,7 +41,7 @@ nav .nav-links a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgba(224, 247, 247, 0.9); /* Slightly transparent background */
+    background-color: rgba(224, 247, 247, 0.9); 
 }
 
 .home-content {
