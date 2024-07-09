@@ -8,9 +8,10 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1200px; /* Adjust as needed */
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden; /* Clear floats within the container */
 }
 
 /* Navigation styles */
@@ -47,10 +48,11 @@ section {
     padding: 50px 20px;
     background-color: #fff; /* White background inside the border */
     margin: 20px auto; /* Centering the section with some margin */
-    max-width: 800px; /* Limiting maximum width for better readability */
+    max-width: 100%; /* Adjust as needed */
     border: 2px solid blue;
     border-radius: 10px; /* Rounded corners for aesthetics */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 h2 {
@@ -62,7 +64,8 @@ h2 {
 }
 
 .social-media img {
-    width: 40px; /* Adjust size as needed */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
     margin: 0 10px;
 }
 
