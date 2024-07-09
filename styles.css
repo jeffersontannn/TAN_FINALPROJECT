@@ -53,6 +53,17 @@ section {
     line-height: 1.6;
 }
 
+.services-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    max-width: 250px;
+    margin: 1rem;
+}
+
 .home-content {
     display: flex;
     flex-direction: column;
@@ -102,49 +113,3 @@ section {
 .portfolio-items {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    width: 30%;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin-top: 1rem;
-}
-
-input, textarea, button {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.submit-btn {
-    background-color: #002166;
-    color: #fff;
-    border: 1px solid #002166;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #002166;
-    color: #fff;
-    text-align: center;
-    padding
