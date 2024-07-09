@@ -29,12 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    setTimeout(type, newTextDelay + 250);
-});
 
-// Dynamic year for footer
-document.addEventListener("DOMContentLoaded", function() {
-    const yearSpan = document.getElementById("year");
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
+    setTimeout(type, newTextDelay + 250);
+
+
+    const filterButtons = document.querySelectorAll('.portfolio-categories .btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            portfolioItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 });
