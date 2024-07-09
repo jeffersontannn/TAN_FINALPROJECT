@@ -189,3 +189,18 @@ section {
     width: 100px;
     margin-top: 1rem;
 }
+
+footer {
+    text-align: center; 
+    padding: 20px 0; 
+    border-top: 1px solid #fff; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer p span {
+    font-weight: bold; 
+}
+
