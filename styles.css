@@ -160,7 +160,7 @@ section {
     text-align: center;
     border: 2px solid #002166;
     margin: 2rem auto;
-    max-width: 900px; /* Increased width */
+    max-width: 900px; 
 }
 
 .contact-form {
@@ -191,12 +191,11 @@ section {
 }
 
 footer {
-    text-align: center; 
-    padding: 20px 0; 
-    border-top: 1px solid #fff; 
-    width: 100%; 
-    position: fixed; 
-    bottom: 0; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #002166; 
+    border-top: 1px solid #ccc; 
+    text-align: center;
+    padding: 10px 0;
 }
-
