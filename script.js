@@ -1,53 +1,36 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const typedTextSpan = document.querySelector(".typed-text");
-    const textArray = ["Project 6", "Project 7", "Project 8"];
-    const typingDelay = 200;
-    const erasingDelay = 100;
-    const newTextDelay = 2000; 
-    let textArrayIndex = 0;
-    let charIndex = 0;
+<script>
+    document.getElementById('btn-project-6').addEventListener('click', function() {
+        window.location.href = 'https://jeffersontannn.github.io/TANTSA6/';
+    });
 
-    function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingDelay);
-        } else {
-            setTimeout(erase, newTextDelay);
-        }
-    }
+    document.getElementById('btn-project-7').addEventListener('click', function() {
+        window.location.href = 'https://jeffersontannn.github.io/TAN_TSA7/';
+    });
 
-    function erase() {
-        if (charIndex > 0) {
-            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-        } else {
-            textArrayIndex++;
-            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingDelay + 1100);
-        }
-    }
+    document.getElementById('btn-project-8').addEventListener('click', function() {
+        window.location.href = 'https://jeffersontannn.github.io/TAN_TSA8/';
+    });
 
-
-    setTimeout(type, newTextDelay + 250);
-
-
-    const filterButtons = document.querySelectorAll('.portfolio-categories .btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const category = button.getAttribute('data-category');
-            portfolioItems.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+    // Optionally handle the "All" button to show all projects
+    document.getElementById('btn-all').addEventListener('click', function() {
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.style.display = 'block';
         });
     });
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-});
+    // Filter portfolio items based on the category buttons
+    document.querySelectorAll('.portfolio-categories .btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            if (category !== 'all') {
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    if (item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+</script>
