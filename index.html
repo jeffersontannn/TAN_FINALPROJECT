@@ -29,9 +29,9 @@
                 <img src="jeff_pic.jpg" alt="Jefferson Tan">
             </div>
             <div class="intro">
-                <h2>Welcome to my Portfolio. I am</h2>
-                <h1>Jefferson Tan of TX01.</h1>
-                <h2>And also I'm a <span class="typed-text"></span>1st year BSITAGD student in Feu-Tech.</h2>
+                <h2>Welcome to my portfolio. I am</h2>
+                <h1> Jefferson Tan from TX01.</h1>
+                <h2>Also, <span class="typed-text"></span>I'm a first-year BSITAGD student at Feu-Tech.</h2>
                 <div class="social-media">
                     <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
                     <a href="#"><img src="github.png" alt="GitHub"></a>
@@ -42,6 +42,26 @@
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jefferson Tan. All rights reserved.</p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
