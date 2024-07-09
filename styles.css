@@ -1,208 +1,107 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Reset and general styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation styles */
 nav {
-    background-color: #006666;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-
-nav .logo h1 {
-    margin-left: 20px;
-}
-
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
-}
-
-nav .nav-links li {
-    margin: 0 10px;
-}
-
-nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgba(224, 247, 247, 0.9); /* Slightly transparent background */
-}
-
-.home-content {
-    display: flex;
-    align-items: center;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.profile-pic img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-right: 50px;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.intro h2 {
-    color: #666;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
-.intro h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
+nav ul li a:hover {
+    background-color: #555;
 }
 
-.intro .typed-text {
-    color: #006666;
+/* Section styles */
+section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border: 2px solid blue;
 }
 
-.intro p {
-    max-width: 600px;
-    margin: 20px 0;
-    color: #666;
+h2 {
+    text-align: center;
 }
 
 .social-media {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.social-media a {
-    margin: 0 10px;
+    text-align: center;
 }
 
 .social-media img {
-    width: 30px;
-}
-
-.btn {
-    background-color: #006666;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.btn:hover {
-    background-color: #004d4d;
-}
-
-#portfolio {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-#portfolio h2 {
-    margin-bottom: 20px;
-}
-
-.portfolio-categories {
-    margin-bottom: 20px;
-}
-
-.portfolio-categories .btn {
+    width: 40px; /* Adjust size as needed */
     margin: 0 10px;
 }
 
-.portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.portfolio-item {
-    margin: 10px;
-    width: 300px;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#social-media {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#social-media h2 {
-    margin-bottom: 20px;
-}
-
-#contact {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#contact h2 {
-    margin-bottom: 20px;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact button {
-    background-color: #006666;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-#contact button:hover {
-    background-color: #004d4d;
-}
-
+/* Footer styles */
 footer {
-   
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Button styles */
+.btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
