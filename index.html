@@ -25,7 +25,7 @@
     </nav>
 
     <section id="home">
-        <div class="home-content">
+        <div class="container">
             <div class="profile-pic">
                 <img src="jeff_pic.jpg" alt="Jefferson Tan">
             </div>
@@ -44,64 +44,86 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-categories">
-            <button class="btn" data-category="all">All</button>
-            <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TANTSA6/';" data-category="TSA 6">TSA 6</button>
-            <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TAN_TSA7/';" data-category="TSA 7">TSA 7</button>
-            <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TAN_TSA8/';" data-category="TSA 8">TSA 8</button>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Add your about me content here...</p>
         </div>
-        <div class="portfolio-items">
-            <div class="portfolio-item" data-category="TSA 6">
-                <a href="https://jeffersontannn.github.io/TANTSA6/">
-                    <img src="tsa6.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                </a>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p>Add your services content here...</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-categories">
+                <button class="btn" data-category="all">All</button>
+                <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TANTSA6/';" data-category="TSA 6">TSA 6</button>
+                <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TAN_TSA7/';" data-category="TSA 7">TSA 7</button>
+                <button class="btn" onclick="location.href='https://jeffersontannn.github.io/TAN_TSA8/';" data-category="TSA 8">TSA 8</button>
             </div>
-            <div class="portfolio-item" data-category="TSA 7">
-                <a href="https://jeffersontannn.github.io/TAN_TSA7/">
-                    <img src="tsa_7.png" alt="Project 2">
-                    <h3>Project 2</h3>
-                </a>
-            </div>
-            <div class="portfolio-item" data-category="TSA 8">
-                <a href="https://jeffersontannn.github.io/TAN_TSA8/">
-                    <img src="tsa8.png" alt="Project 3">
-                    <h3>Project 3</h3>
-                </a>
+            <div class="portfolio-items">
+                <div class="portfolio-item" data-category="TSA 6">
+                    <a href="https://jeffersontannn.github.io/TANTSA6/">
+                        <img src="tsa6.png" alt="Project 1">
+                        <h3>Project 1</h3>
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="TSA 7">
+                    <a href="https://jeffersontannn.github.io/TAN_TSA7/">
+                        <img src="tsa_7.png" alt="Project 2">
+                        <h3>Project 2</h3>
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="TSA 8">
+                    <a href="https://jeffersontannn.github.io/TAN_TSA8/">
+                        <img src="tsa8.png" alt="Project 3">
+                        <h3>Project 3</h3>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="social-media">
-        <h2>Social Media Links</h2>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/jefferson-emmanuel-tan-03063b318/"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/jeffersontannn"><img src="github.png" alt="GitHub"></a>
-            <a href="https://www.facebook.com/jefferson.e.tan"><img src="fb.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/jeffersontannn/"><img src="instagram.webp" alt="Instagram"></a>
+        <div class="container">
+            <h2>Social Media Links</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/jefferson-emmanuel-tan-03063b318/"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/jeffersontannn"><img src="github.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/jefferson.e.tan"><img src="fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/jeffersontannn/"><img src="instagram.webp" alt="Instagram"></a>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; <span id="year"></span> Jefferson Tan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Jefferson Tan. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
