@@ -4,16 +4,19 @@ body {
 }
 
 #background {
+    background-image: url('background.webm'), url('background.mp4'), url('background.ogg');
+    background-size: cover;
+    background-position: center;
+}
+
+#background-video {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-    background-image: url('background.webm');
-    background-size: cover;
-    background-position: center;
-    pointer-events: none; 
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
 nav {
