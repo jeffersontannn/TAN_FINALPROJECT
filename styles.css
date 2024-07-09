@@ -48,8 +48,8 @@ section {
     border: 5px solid #002166;
     background-color: #fff; /* White background inside the border */
     color: black; /* Text color */
-    margin: 25rem auto; /* Centering the section with margin */
-    max-width: 1000px; /* Limiting maximum width for better readability */
+    margin: 5rem auto; /* Centering the section with margin */
+    max-width: 800px; /* Limiting maximum width for better readability */
 }
 
 h2 {
