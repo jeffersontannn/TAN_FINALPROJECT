@@ -46,11 +46,12 @@ section {
     padding: 2rem 0;
     text-align: center;
     border: 5px solid #002166;
-    background-color: #fff;
-    color: black;
-    margin: 2rem auto;
-    max-width: 800px;
+    background-color: #fff; /* White background inside the border */
+    color: black; /* Text color */
+    margin: 25rem auto; /* Centering the section with margin */
+    max-width: 1000px; /* Limiting maximum width for better readability */
 }
+
 h2 {
     text-align: center;
 }
