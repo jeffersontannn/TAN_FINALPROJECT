@@ -129,10 +129,11 @@ input, textarea, button {
 .submit-btn {
     background-color: #002166;
     color: #fff;
-    border: 1px solid #333;
+    border: 1px solid #002166;
     padding: 0.5rem 1rem;
     cursor: pointer;
     margin-top: 1rem;
+    border-radius: 5px;
 }
 
 footer {
