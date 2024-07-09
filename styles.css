@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -105,13 +106,18 @@ nav .logo h1 {
     background-color: #004d4d;
 }
 
-#portfolio {
+#about, #services, #portfolio, #contact {
     padding: 50px 20px;
     text-align: center;
     background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#portfolio h2 {
+#about h2, #services h2, #portfolio h2, #contact h2 {
     margin-bottom: 20px;
 }
 
@@ -139,16 +145,6 @@ nav .logo h1 {
     height: auto;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#contact h2 {
-    margin-bottom: 20px;
 }
 
 #contact form {
