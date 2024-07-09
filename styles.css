@@ -112,4 +112,22 @@ section {
 
 .portfolio-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.portfolio-item {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
