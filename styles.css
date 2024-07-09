@@ -1,14 +1,15 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 5;
+    margin: 0;
     padding: 0;
+    background-color: blue; /* Set background color of body */
+    color: white; /* Set font color of body */
 }
 
 /* Navigation styles */
 nav {
-    background-color: white;
-    color: #fff;
+    background-color: blue;
     padding: 1rem 0;
 }
 
@@ -28,7 +29,7 @@ nav .container {
 
 .logo h1 {
     margin: 0;
-    color: #fff; /* White font color */
+    color: white; /* White font color */
 }
 
 .nav-links {
@@ -43,7 +44,7 @@ nav .container {
 }
 
 .nav-links a {
-    color: #fff; /* White font color */
+    color: white; /* White font color */
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
@@ -57,9 +58,9 @@ nav .container {
 section {
     padding: 2rem 0;
     text-align: center;
-    border: 5px solid black; /* Black border */
-    background-color: white; /* Blue background */
-    color: black; /* White text color */
+    border: 5px solid white; /* Thicker white border */
+    background-color: blue; /* Blue background */
+    color: white; /* White text color */
     margin: 2rem auto;
     max-width: 800px;
 }
@@ -124,12 +125,16 @@ section h2, section p {
 
 /* Button styles */
 .btn {
-    background-color: #002166;
-    color: #fff;
+    background-color: white;
+    color: blue;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #ccc; /* Light gray background on hover */
 }
 
 /* Portfolio section styles */
@@ -147,7 +152,7 @@ section h2, section p {
     flex: 1 1 30%;
     margin: 1rem;
     padding: 1rem;
-    border: 5px solid #ccc;
+    border: 5px solid white; /* Thicker white border */
     border-radius: 10px;
     text-align: center;
 }
@@ -163,10 +168,10 @@ section h2, section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid #ccc;
+    border: 5px solid white; /* Thicker white border */
     border-radius: 10px;
     padding: 1rem;
-    background-color: #f9f9f9;
+    background-color: blue; /* Blue background */
     margin: 1rem;
 }
 
@@ -192,6 +197,7 @@ form {
 form label {
     display: block;
     margin-bottom: 0.5rem;
+    color: white; /* White font color */
 }
 
 form input,
@@ -199,13 +205,15 @@ form textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
+    background-color: blue; /* Blue background */
+    color: white; /* White text color */
 }
 
 .submit-btn {
-    background-color: #002166;
-    color: #fff;
+    background-color: white;
+    color: blue;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
@@ -215,9 +223,10 @@ form textarea {
 footer {
     text-align: center; /* Center-align text */
     padding: 20px 0; /* Padding around footer content */
-    border-top: 1px solid #ddd; /* Top border with light gray color */
+    border-top: 1px solid white; /* White top border */
     width: 100%; /* Ensure the footer spans the full width of its container */
     position: fixed; /* Fix the footer position */
     bottom: 0; /* Position at the bottom of the viewport */
-    background-color: white; /* Optional: Set a background color */
+    background-color: blue; /* Blue background */
+    color: white; /* White font color */
 }
