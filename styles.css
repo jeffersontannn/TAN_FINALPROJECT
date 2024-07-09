@@ -2,92 +2,94 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-image: url('spiders.jpg'); /* Ensure the path is correct */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #333;
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.8);
+    background-color: #002166;
+    color: #fff;
     padding: 1rem 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .logo h1 {
     margin: 0;
-    font-size: 2rem;
-    color: #333;
 }
 
 .nav-links {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
 }
 
 .nav-links li {
-    margin-left: 1rem;
+    display: inline;
+    margin-left: 2rem;
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #007BFF;
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     text-align: center;
+    border: 2px solid #002166;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    max-width: 250px;
+    margin: 1rem;
 }
 
 .home-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .profile-pic img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #007BFF;
+    margin-bottom: 1rem;
 }
 
+.intro h1,
 .intro h2 {
     margin: 0.5rem 0;
 }
 
-.intro h1 {
-    font-size: 3rem;
-    margin: 0.5rem 0;
-}
-
 .social-media {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .social-media a {
     margin: 0 0.5rem;
+    display: inline-block;
 }
 
 .social-media img {
@@ -96,42 +98,28 @@ section {
 }
 
 .btn {
-    padding: 0.5rem 1rem;
-    background-color: #007BFF;
+    background-color: #002166;
     color: #fff;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #0056b3;
+    margin-top: 1rem;
 }
 
 .portfolio-categories {
-    display: flex;
-    justify-content: center;
     margin-bottom: 2rem;
 }
 
 .portfolio-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .portfolio-item {
-    margin: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 200px;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
+    width: 30%;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .portfolio-item img {
@@ -139,33 +127,36 @@ section {
     height: auto;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea, button {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.submit-btn {
+    background-color: #002166;
+    color: #fff;
+    border: 1px solid #002166;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #002166;
     color: #fff;
     text-align: center;
-    padding: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        margin-left: 0;
-    }
-
-    .home-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+    padding: 1rem 0;
 }
