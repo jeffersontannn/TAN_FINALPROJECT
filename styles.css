@@ -111,3 +111,56 @@ nav .nav-links a {
 .btn:hover {
     background-color: #004d4d;
 }
+
+#contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #006666;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#contact button:hover {
+    background-color: #004d4d;
+}
+
+footer {
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
