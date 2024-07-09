@@ -1,14 +1,14 @@
 /* Reset and general styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 5;
     padding: 0;
     background-color: #3498db; /* Main background color */
     color: #333; /* Text color */
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 800px; /* Adjust as needed */
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden; /* Clear floats within the container */
@@ -36,7 +36,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
@@ -45,13 +45,13 @@ nav ul li a:hover {
 
 /* Section styles */
 section {
-    padding: 50px 20px;
+    padding: 5px 10px;
     background-color: #fff; /* White background inside the border */
-    margin: 20px auto; /* Centering the section with some margin */
+    margin: 5px auto; /* Centering the section with some margin */
     max-width: 100%; /* Adjust as needed */
     border: 2px solid blue;
     border-radius: 10px; /* Rounded corners for aesthetics */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -64,7 +64,7 @@ h2 {
 }
 
 .social-media img {
-    max-width: 100%; /* Ensure images don't exceed their container */
+    max-width: 50%; /* Ensure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     margin: 0 10px;
     display: block; /* Ensure images don't have extra space below them */
@@ -88,7 +88,7 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -99,7 +99,7 @@ footer {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -108,10 +108,10 @@ footer {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 24px;
+        font-size: 12px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
