@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -21,7 +26,6 @@ body {
     width: auto;
     height: auto;
     z-index: -1;
-    background: url('background.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -59,58 +63,72 @@ nav .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-} 
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 
 .home-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    color: white;
-    height: 100vh;
-    z-index: 1;
-    position: relative;
+    align-items: center;
 }
 
 .home-content .profile-pic img {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.home-content .intro {
-    margin-top: 20px;
+.home-content .intro h1,
+.home-content .intro h2 {
+    margin: 10px 0;
 }
 
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media a img {
+.home-content .social-media a img {
     width: 30px;
     height: 30px;
     margin: 0 10px;
 }
 
-.btn {
-    background-color: #006666;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-section {
-    padding: 50px 20px;
+.portfolio-item {
+    margin: 10px;
+    width: 200px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.social-media a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
 
 footer {
     background-color: #006666;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    z-index: 1;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#year {
+    font-weight: bold;
 }
