@@ -7,7 +7,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #f4f4f4; 
     background-size: cover;
     background-repeat: no-repeat;
-    animation: fadeInBackground 5s ease-in-out infinite alternate;
+    animation: fadeInBackground 5s ease-in-out infinite alternate; 
 }
 
 @keyframes fadeInBackground {
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #595959;
+    background-color: #595959; 
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -90,7 +90,7 @@ section {
 }
 
 .social-media a img {
-    width: 30px; 
+    width: 30px;
     height: 30px; 
     object-fit: contain;
     margin-bottom: 5px; 
@@ -170,7 +170,7 @@ form input, form textarea {
 }
 
 form textarea {
-    resize: vertical;
+    resize: vertical; 
     min-height: 150px;
 }
 
