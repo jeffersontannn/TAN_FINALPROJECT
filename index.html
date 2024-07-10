@@ -8,6 +8,15 @@
 
     <!-- Include Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Additional CSS for image size and responsiveness */
+        .swiper-slide img {
+            max-width: 100%; /* Ensure images do not exceed their container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below images */
+            margin: 0 auto; /* Center images horizontally */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -76,16 +85,25 @@
         <section id="portfolio">
             <h2>PORTFOLIO: </h2>
             <div class="portfolio-categories">
-                <button class="btn" onclick="showPortfolio(1)">TSA 6</button>
-                <button class="btn" onclick="showPortfolio(2)">TSA 7</button>
-                <button class="btn" onclick="showPortfolio(3)">TSA 8</button>
+                <!-- Update onclick events to navigate to project URLs -->
+                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TANTSA6/', '_blank')">TSA 6</button>
+                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA7/', '_blank')">TSA 7</button>
+                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA8/', '_blank')">TSA 8</button>
             </div>
             <div class="portfolio-items">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img id="portfolio-img" src="tsa6.png" alt="TSA 6">
+                            <img src="tsa6.png" alt="TSA 6">
                             <h3>TSA 6</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="tsa7.png" alt="TSA 7">
+                            <h3>TSA 7</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="tsa8.png" alt="TSA 8">
+                            <h3>TSA 8</h3>
                         </div>
                     </div>
                     <!-- Add Pagination -->
@@ -167,33 +185,6 @@
                 el: '.swiper-scrollbar',
             },
         });
-
-        function showPortfolio(index) {
-            var imgSrc;
-            var slideTitle;
-
-            switch (index) {
-                case 1:
-                    imgSrc = 'tsa6.png';
-                    slideTitle = 'TSA 6';
-                    break;
-                case 2:
-                    imgSrc = 'tsa_7.png';
-                    slideTitle = 'TSA 7';
-                    break;
-                case 3:
-                    imgSrc = 'tsa8.png';
-                    slideTitle = 'TSA 8';
-                    break;
-                default:
-                    imgSrc = 'tsa6.png';
-                    slideTitle = 'TSA 6';
-            }
-
-            document.getElementById('portfolio-img').src = imgSrc;
-            document.getElementById('portfolio-img').alt = slideTitle;
-            document.querySelector('.swiper-slide h3').innerText = slideTitle;
-        }
     </script>
 </body>
 </html>
