@@ -150,27 +150,24 @@
                             <img src="tsa6.png" alt="TSA 6">
                             <h3>TSA 6</h3>
                             <div class="circle-buttons">
-                                <button onclick="showSlide(0)">•</button>
-                                <button onclick="showSlide(1)">•</button>
-                                <button onclick="showSlide(2)">•</button>
+                                <button onclick="prevSlide(0)">◀</button>
+                                <button onclick="nextSlide(0)">▶</button>
                             </div>
                         </div>
                         <div class="swiper-slide" id="tsa7">
                             <img src="tsa7.png" alt="TSA 7">
                             <h3>TSA 7</h3>
                             <div class="circle-buttons">
-                                <button onclick="showSlide(0)">•</button>
-                                <button onclick="showSlide(1)">•</button>
-                                <button onclick="showSlide(2)">•</button>
+                                <button onclick="prevSlide(1)">◀</button>
+                                <button onclick="nextSlide(1)">▶</button>
                             </div>
                         </div>
                         <div class="swiper-slide" id="tsa8">
                             <img src="tsa8.png" alt="TSA 8">
                             <h3>TSA 8</h3>
                             <div class="circle-buttons">
-                                <button onclick="showSlide(0)">•</button>
-                                <button onclick="showSlide(1)">•</button>
-                                <button onclick="showSlide(2)">•</button>
+                                <button onclick="prevSlide(2)">◀</button>
+                                <button onclick="nextSlide(2)">▶</button>
                             </div>
                         </div>
                     </div>
@@ -238,25 +235,37 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
+        var swipers = [];
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.swiper-container').forEach(function(element) {
+                var swiper = new Swiper(element, {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+
+                swipers.push(swiper);
+            });
         });
 
         // Function to show/hide swiper slides based on button click
-        function showSlide(index) {
-            swiper.slideTo(index); // Go to the slide at the specified index
+        function nextSlide(index) {
+            swipers[index].slideNext();
+        }
+
+        function prevSlide(index) {
+            swipers[index].slidePrev();
         }
     </script>
 </body>
