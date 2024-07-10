@@ -80,6 +80,7 @@ section {
     width: 30px; /* Adjust the width to a smaller size */
     height: 30px; /* Adjust the height to a smaller size */
     margin: 0 10px;
+    object-fit: contain; /* Ensures icons fit within the dimensions */
 }
 
 .btn {
