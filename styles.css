@@ -70,22 +70,28 @@ section {
     color: #333;
 }
 
-.social-media {
+/* Adjusting social media icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 10px; /* Adjust the space between icons */
+    gap: 5px; /* Adjust the space between icons */
 }
 
-.social-media a {
+.social-icons li {
     display: inline-block;
-    margin: 0 5px; /* Adjust spacing around each icon */
     text-align: center;
 }
 
-.social-media img {
-    width: 20px; /* Adjust the width of the icons */
-    height: 20px; /* Adjust the height of the icons */
+.social-icons img {
+    width: 10px; /* Adjust the width of the icons */
+    height: 15px; /* Adjust the height of the icons */
     object-fit: contain; /* Ensure the icons fit within the dimensions */
+}
+
+.social-icons span {
+    font-size: 1rem; /* Adjust font size as needed */
 }
 
 .btn {
