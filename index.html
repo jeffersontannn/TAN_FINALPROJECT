@@ -5,72 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jefferson Tan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Include Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style>
-        /* Additional CSS for image size and responsiveness */
-        .swiper-slide img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* Center align buttons */
-        .portfolio-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .portfolio-buttons button {
-            margin: 0 10px;
-        }
-
-        .circle-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .circle-buttons button {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #ddd;
-            border: none;
-            cursor: pointer;
-        }
-
-        .circle-buttons button.active {
-            background-color: #007bff;
-        }
-
-        .portfolio-items {
-            text-align: center;
-        }
-
-        .portfolio-items img {
-            max-width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .swiper-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Hide all slides initially except the first one */
-        .swiper-slide {
-            display: none;
-        }
-
-        .swiper-slide:first-child {
-            display: block;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -136,7 +72,7 @@
             </div>
         </section>
 
-    <section id="portfolio">
+   <section id="portfolio">
     <h2>PORTFOLIO: </h2>
     <div class="portfolio-buttons">
         <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TANTSA6/'">TSA 6</button>
@@ -149,12 +85,7 @@
                 <div class="swiper-slide">
                     <img src="tsa6.png" alt="TSA 6">
                     <h3>TSA 6</h3>
-                    <div class="circle-buttons">
-                        <button id="prev-tsa6" class="prev-btn">◀</button>
-                        <button id="next-tsa6" class="next-btn">▶</button>
-                    </div>
                 </div>
-                <!-- Add other slides for TSA 6 -->
             </div>
             <div class="swiper-pagination swiper-pagination-tsa6"></div>
             <div class="swiper-button-next"></div>
@@ -167,12 +98,7 @@
                 <div class="swiper-slide">
                     <img src="tsa_7.png" alt="TSA 7">
                     <h3>TSA 7</h3>
-                    <div class="circle-buttons">
-                        <button id="prev-tsa7" class="prev-btn">◀</button>
-                        <button id="next-tsa7" class="next-btn">▶</button>
-                    </div>
                 </div>
-                <!-- Add other slides for TSA 7 -->
             </div>
             <div class="swiper-pagination swiper-pagination-tsa7"></div>
             <div class="swiper-button-next"></div>
@@ -185,12 +111,7 @@
                 <div class="swiper-slide">
                     <img src="tsa8.png" alt="TSA 8">
                     <h3>TSA 8</h3>
-                    <div class="circle-buttons">
-                        <button id="prev-tsa8" class="prev-btn">◀</button>
-                        <button id="next-tsa8" class="next-btn">▶</button>
-                    </div>
                 </div>
-                <!-- Add other slides for TSA 8 -->
             </div>
             <div class="swiper-pagination swiper-pagination-tsa8"></div>
             <div class="swiper-button-next"></div>
@@ -199,6 +120,7 @@
         </div>
     </div>
 </section>
+
 
         <section id="contact">
             <h2>CONTACTS: </h2>
@@ -249,50 +171,5 @@
     <footer>
         &copy; 2024 Jefferson Tan. All rights reserved.
     </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swipers = [];
-
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.swiper-container').forEach(function(element, index) {
-        var swiper = new Swiper(element, {
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-
-        swipers.push(swiper);
-
-        // Setup navigation buttons for each project section
-        var nextButtons = document.querySelectorAll('.swiper-container').item(index).querySelectorAll('.next-btn');
-        var prevButtons = document.querySelectorAll('.swiper-container').item(index).querySelectorAll('.prev-btn');
-
-        nextButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                swiper.slideNext();
-            });
-        });
-
-        prevButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                swiper.slidePrev();
-            });
-        });
-    });
-});
-
-    </script>
 </body>
 </html>
