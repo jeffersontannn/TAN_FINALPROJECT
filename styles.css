@@ -51,8 +51,10 @@ section {
 
 .profile-pic img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Smaller width */
+    height: 100px; /* Smaller height */
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
 
 .intro {
@@ -65,6 +67,12 @@ section {
 
 .typed-text {
     color: #333;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between social media icons */
 }
 
 .social-media a img {
@@ -81,6 +89,8 @@ section {
     cursor: pointer;
     margin: 10px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -89,12 +99,15 @@ section {
 
 .portfolio-item {
     margin: 10px;
+    text-align: center; /* Center the portfolio items */
 }
 
 .portfolio-item img {
-    width: 100%;
+    width: 200px; /* Smaller width for portfolio images */
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
 
 .submit-btn {
