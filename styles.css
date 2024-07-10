@@ -85,8 +85,8 @@ section {
 }
 
 .social-icons img {
-    width: 100px; /* Adjust the width of the icons */
-    height: 100px; /* Adjust the height of the icons */
+    width: 15px; /* Adjust the width of the icons */
+    height: 15px; /* Adjust the height of the icons */
     object-fit: contain; /* Ensure the icons fit within the dimensions */
 }
 
