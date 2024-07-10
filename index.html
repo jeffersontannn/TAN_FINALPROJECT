@@ -11,15 +11,10 @@
     <style>
         /* Additional CSS for image size and responsiveness */
         .swiper-slide img {
-            max-width: 100%; /* Ensure images do not exceed their container width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove extra space below images */
-            margin: 0 auto; /* Center images horizontally */
-        }
-
-        /* Hide all slides initially except the first one */
-        .swiper-slide:not(:first-child) {
-            display: none;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         /* Center align buttons */
@@ -30,6 +25,50 @@
 
         .portfolio-buttons button {
             margin: 0 10px;
+        }
+
+        .circle-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .circle-buttons button {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+        }
+
+        .circle-buttons button.active {
+            background-color: #007bff;
+        }
+
+        .portfolio-items {
+            text-align: center;
+        }
+
+        .portfolio-items img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .swiper-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Hide all slides initially except the first one */
+        .swiper-slide {
+            display: none;
+        }
+
+        .swiper-slide:first-child {
+            display: block;
         }
     </style>
 </head>
@@ -100,9 +139,9 @@
         <section id="portfolio">
             <h2>PORTFOLIO: </h2>
             <div class="portfolio-buttons">
-                <button class="btn" onclick="showProject('tsa6')">TSA 6</button>
-                <button class="btn" onclick="showProject('tsa7')">TSA 7</button>
-                <button class="btn" onclick="showProject('tsa8')">TSA 8</button>
+                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TANTSA6/'">TSA 6</button>
+                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA7/'">TSA 7</button>
+                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA8/'">TSA 8</button>
             </div>
             <div class="portfolio-items">
                 <div class="swiper-container">
@@ -110,14 +149,29 @@
                         <div class="swiper-slide" id="tsa6">
                             <img src="tsa6.png" alt="TSA 6">
                             <h3>TSA 6</h3>
+                            <div class="circle-buttons">
+                                <button onclick="showSlide(0)">•</button>
+                                <button onclick="showSlide(1)">•</button>
+                                <button onclick="showSlide(2)">•</button>
+                            </div>
                         </div>
                         <div class="swiper-slide" id="tsa7">
                             <img src="tsa7.png" alt="TSA 7">
                             <h3>TSA 7</h3>
+                            <div class="circle-buttons">
+                                <button onclick="showSlide(0)">•</button>
+                                <button onclick="showSlide(1)">•</button>
+                                <button onclick="showSlide(2)">•</button>
+                            </div>
                         </div>
                         <div class="swiper-slide" id="tsa8">
                             <img src="tsa8.png" alt="TSA 8">
                             <h3>TSA 8</h3>
+                            <div class="circle-buttons">
+                                <button onclick="showSlide(0)">•</button>
+                                <button onclick="showSlide(1)">•</button>
+                                <button onclick="showSlide(2)">•</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Add Pagination -->
@@ -201,18 +255,8 @@
         });
 
         // Function to show/hide swiper slides based on button click
-        function showProject(projectId) {
-            // Hide all swiper slides
-            var slides = document.querySelectorAll('.swiper-slide');
-            slides.forEach(function(slide) {
-                slide.style.display = 'none';
-            });
-
-            // Show the selected project
-            var selectedProject = document.getElementById(projectId);
-            if (selectedProject) {
-                selectedProject.style.display = 'block';
-            }
+        function showSlide(index) {
+            swiper.slideTo(index); // Go to the slide at the specified index
         }
     </script>
 </body>
