@@ -3,7 +3,20 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #f4f4f4;
+    background-color: #f4f4f4; /* Fallback background color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #f4f4f4; /* Gradient for fading effect */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeInBackground 5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 header {
