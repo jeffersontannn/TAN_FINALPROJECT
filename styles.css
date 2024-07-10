@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; 
-    background-image: url('dark.png'); 
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-image: url('dark.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #f4f4f4; /* Gradient for fading effect */
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    color: #333; 
-    animation: fadeInBackground 2s ease; 
+    animation: fadeInBackground 5s ease-in-out infinite alternate;
 }
 
 @keyframes fadeInBackground {
@@ -77,16 +77,6 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
-    animation: moveUpDown 2s ease-in-out infinite alternate; 
-}
-
-@keyframes moveUpDown {
-    20% {
-        transform: translateY(0); 
-    }
-    100% {
-        transform: translateY(15px); 
-    }
 }
 
 .intro h1, .intro h2, .about-content h2 {
@@ -101,16 +91,16 @@ section {
 }
 
 .social-media a img {
-    width: 30px;
-    height: 30px; 
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
     object-fit: contain;
-    margin-bottom: 5px; 
+    margin-bottom: 5px; /* Space between icon and label */
 }
 
 .btn {
     background-color: #333;
     color: #fff;
-    padding: 15px 30px; 
+    padding: 15px 30px; /* Adjust padding for height and width */
     border: none;
     cursor: pointer;
     margin: 10px;
@@ -181,7 +171,7 @@ form input, form textarea {
 }
 
 form textarea {
-    resize: vertical; 
+    resize: vertical; /* Allow vertical resize only */
     min-height: 150px;
 }
 
@@ -220,14 +210,14 @@ form textarea {
 }
 
 .social-icons img {
-    width: 30px; 
-    height: 30px; 
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
     object-fit: contain;
-    margin-bottom: 5px; 
+    margin-bottom: 5px; /* Space between icon and label */
 }
 
 .social-icons span {
-    font-size: 0.8rem; 
+    font-size: 0.8rem; /* Adjust font size as needed */
 }
 
 footer {
