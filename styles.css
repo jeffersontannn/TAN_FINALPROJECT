@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white; /* Change body background to white */
+    color: black; /* Change body text color to black */
 }
 
 /* Navigation styles */
@@ -58,8 +60,8 @@ section {
     padding: 2rem 0;
     text-align: center;
     border: 2px solid black; /* Black border */
-    background-color: blue; /* Blue background */
-    color: white; /* White text color */
+    background-color: white; /* Change section background to white */
+    color: black; /* Change section text color to black */
     margin: 2rem auto;
     max-width: 800px;
 }
@@ -219,5 +221,6 @@ footer {
     width: 100%; /* Ensure the footer spans the full width of its container */
     position: fixed; /* Fix the footer position */
     bottom: 0; /* Position at the bottom of the viewport */
-    background-color: white; /* Optional: Set a background color */
+    background-color: white; /* Set a background color */
+    color: black; /* Change footer text color to black */
 }
