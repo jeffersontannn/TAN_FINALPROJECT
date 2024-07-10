@@ -47,20 +47,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.profile-pic img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-}
-
-.intro, .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
     border: 2px solid blue;
     border-radius: 10px;
@@ -71,13 +57,17 @@ section {
     text-align: center;
 }
 
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
 .intro h1, .intro h2, .about-content h2 {
     color: #333;
     margin: 10px 0;
-}
-
-.typed-text {
-    color: #333;
 }
 
 .social-media {
