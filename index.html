@@ -6,19 +6,23 @@
     <title>Jefferson Tan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Include Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
+        /* Additional CSS for image size and responsiveness */
         .swiper-slide img {
-            max-width: 100%;
-            height: auto; 
-            display: block; 
-            margin: 0 auto; 
+            max-width: 100%; /* Ensure images do not exceed their container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below images */
+            margin: 0 auto; /* Center images horizontally */
         }
 
+        /* Hide all slides initially except the first one */
         .swiper-slide:not(:first-child) {
             display: none;
         }
 
+        /* Center align buttons */
         .portfolio-buttons {
             text-align: center;
             margin-top: 20px;
@@ -97,30 +101,33 @@
             <h2>PORTFOLIO: </h2>
             <div class="portfolio-categories">
                 <div class="portfolio-buttons">
-                    <button class="btn" onclick="showProject('tsa6')">TSA 6</button>
-                    <button class="btn" onclick="showProject('tsa7')">TSA 7</button>
-                    <button class="btn" onclick="showProject('tsa8')">TSA 8</button>
+                    <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TANTSA6/', '_blank')">TSA 6</button>
+                    <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA7/', '_blank')">TSA 7</button>
+                    <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA8/', '_blank')">TSA 8</button>
                 </div>
             </div>
             <div class="portfolio-items">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="tsa6">
+                        <div class="swiper-slide">
                             <img src="tsa6.png" alt="TSA 6">
                             <h3>TSA 6</h3>
                         </div>
-                        <div class="swiper-slide" id="tsa7">
-                            <img src="tsa_7.png" alt="TSA 7">
+                        <div class="swiper-slide">
+                            <img src="tsa7.png" alt="TSA 7">
                             <h3>TSA 7</h3>
                         </div>
-                        <div class="swiper-slide" id="tsa8">
+                        <div class="swiper-slide">
                             <img src="tsa8.png" alt="TSA 8">
                             <h3>TSA 8</h3>
                         </div>
                     </div>
+                    <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                    <!-- Add Scrollbar -->
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>
@@ -175,7 +182,8 @@
     <footer>
         &copy; 2024 Jefferson Tan. All rights reserved.
     </footer>
-    
+
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -194,12 +202,15 @@
             },
         });
 
+        // Function to show/hide swiper slides based on button click
         function showProject(projectId) {
+            // Hide all swiper slides
             var slides = document.querySelectorAll('.swiper-slide');
             slides.forEach(function(slide) {
                 slide.style.display = 'none';
             });
 
+            // Show the selected project
             var selectedProject = document.getElementById(projectId);
             if (selectedProject) {
                 selectedProject.style.display = 'block';
