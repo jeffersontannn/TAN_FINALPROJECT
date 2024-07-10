@@ -6,15 +6,14 @@
     <title>Jefferson Tan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Include Swiper CSS -->
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        /* Additional CSS for image size and responsiveness */
         .swiper-slide img {
-            max-width: 100%; /* Ensure images do not exceed their container width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove extra space below images */
-            margin: 0 auto; /* Center images horizontally */
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -85,7 +84,6 @@
         <section id="portfolio">
             <h2>PORTFOLIO: </h2>
             <div class="portfolio-categories">
-                <!-- Update onclick events to navigate to project URLs -->
                 <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TANTSA6/', '_blank')">TSA 6</button>
                 <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA7/', '_blank')">TSA 7</button>
                 <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA8/', '_blank')">TSA 8</button>
@@ -98,7 +96,7 @@
                             <h3>TSA 6</h3>
                         </div>
                         <div class="swiper-slide">
-                            <img src="tsa7.png" alt="TSA 7">
+                            <img src="tsa_7.png" alt="TSA 7">
                             <h3>TSA 7</h3>
                         </div>
                         <div class="swiper-slide">
@@ -106,12 +104,9 @@
                             <h3>TSA 8</h3>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <!-- Add Scrollbar -->
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>
@@ -167,7 +162,6 @@
         &copy; 2024 Jefferson Tan. All rights reserved.
     </footer>
 
-    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
