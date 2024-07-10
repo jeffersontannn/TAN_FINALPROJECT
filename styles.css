@@ -70,28 +70,38 @@ section {
     color: #333;
 }
 
-/* Adjusting social media icons */
 .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 5px; /* Adjust the space between icons */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .social-icons li {
-    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: center;
 }
 
 .social-icons img {
-    width: 15px; /* Adjust the width of the icons */
-    height: 15px; /* Adjust the height of the icons */
-    object-fit: contain; /* Ensure the icons fit within the dimensions */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
 }
 
-.social-icons span {
-    font-size: 1rem; /* Adjust font size as needed */
+.social-icons span{
+    margin-top: 0;
+}
+
+.social-icons {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .btn {
