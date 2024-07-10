@@ -1,3 +1,4 @@
+/* General reset and base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -43,12 +44,14 @@ section {
     background: #fff;
 }
 
-.home-content, .about-content, .services-content, .portfolio-categories, .portfolio-items, .social-icons {
+/* Common styles for content areas */
+.home-content, .about-content, .services-content, .portfolio-categories, .portfolio-items, .social-icons, .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Styling for profile picture */
 .profile-pic img {
     border-radius: 50%;
     width: 100px;
@@ -57,6 +60,7 @@ section {
     margin: 0 auto;
 }
 
+/* Intro section styles */
 .intro {
     text-align: center;
 }
@@ -70,13 +74,16 @@ section {
     color: #333;
 }
 
+/* Social media icons container */
 .social-icons {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 10px; /* Adjust the space between icons */
 }
 
+/* Individual social media icon styles */
 .social-icons li {
     text-align: center;
     margin: 0 10px;
@@ -104,6 +111,7 @@ section {
     font-size: 0.8rem; /* Adjust font size as needed */
 }
 
+/* Button styles */
 .btn {
     background-color: #333;
     color: #fff;
@@ -121,6 +129,7 @@ section {
     background-color: #555;
 }
 
+/* Services and portfolio item styles */
 .services-content, .portfolio-categories, .portfolio-items {
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +159,7 @@ section {
     margin: 0 auto;
 }
 
+/* Contact form styles */
 .contact-content {
     width: 100%;
     max-width: 600px;
@@ -196,6 +206,7 @@ form textarea {
     background-color: #555;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 1rem 0;
