@@ -77,8 +77,8 @@ section {
 }
 
 .social-media a img {
-    width: 30px; /* Adjust the width to a smaller size */
-    height: 30px; /* Adjust the height to a smaller size */
+    width: 10px; /* Adjust the width to a smaller size */
+    height: 10px; /* Adjust the height to a smaller size */
     margin: 0 5px;
     object-fit: contain; /* Ensures icons fit within the dimensions */
 }
@@ -86,7 +86,7 @@ section {
 .btn {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Adjust padding for height and width */
     border: none;
     cursor: pointer;
     margin: 10px;
