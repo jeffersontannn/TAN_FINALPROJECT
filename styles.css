@@ -77,8 +77,8 @@ section {
 }
 
 .social-media a img {
-    width: 50px; /* Adjust icon size */
-    height: 50px; /* Adjust icon size */
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
     object-fit: contain;
     margin-bottom: 5px; /* Space between icon and label */
 }
