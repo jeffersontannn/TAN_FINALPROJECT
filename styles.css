@@ -76,13 +76,17 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease;
+    animation: moveUpDown 2s ease-in-out infinite alternate; /* Animation properties */
 }
 
-.profile-pic img:hover {
-    transform: translateY(-5px); /* Adjust the amount of movement */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(-10px); /* End position */
+    }
 }
-
 .intro h1, .intro h2, .about-content h2 {
     color: #333;
     margin: 10px 0;
