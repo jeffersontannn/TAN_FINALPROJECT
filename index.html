@@ -136,52 +136,51 @@
             </div>
         </section>
 
-        <section id="portfolio">
-            <h2>PORTFOLIO: </h2>
-            <div class="portfolio-buttons">
-                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TANTSA6/'">TSA 6</button>
-                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA7/'">TSA 7</button>
-                <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA8/'">TSA 8</button>
-            </div>
-            <div class="portfolio-items">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="tsa6">
-                            <img src="tsa6.png" alt="TSA 6">
-                            <h3>TSA 6</h3>
-                            <div class="circle-buttons">
-                                <button onclick="prevSlide(0)">◀</button>
-                                <button onclick="nextSlide(0)">▶</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" id="tsa7">
-                            <img src="tsa_7.png" alt="TSA 7">
-                            <h3>TSA 7</h3>
-                            <div class="circle-buttons">
-                                <button onclick="prevSlide(1)">◀</button>
-                                <button onclick="nextSlide(1)">▶</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" id="tsa8">
-                            <img src="tsa8.png" alt="TSA 8">
-                            <h3>TSA 8</h3>
-                            <div class="circle-buttons">
-                                <button onclick="prevSlide(2)">◀</button>
-                                <button onclick="nextSlide(2)">▶</button>
-                            </div>
-                        </div>
+      <section id="portfolio">
+    <h2>PORTFOLIO: </h2>
+    <div class="portfolio-buttons">
+        <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TANTSA6/'">TSA 6</button>
+        <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA7/'">TSA 7</button>
+        <button class="btn" onclick="window.location.href='https://jeffersontannn.github.io/TAN_TSA8/'">TSA 8</button>
+    </div>
+    <div class="portfolio-items">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="tsa6">
+                    <img src="tsa6.png" alt="TSA 6">
+                    <h3>TSA 6</h3>
+                    <div class="circle-buttons">
+                        <button class="prev-btn">◀</button>
+                        <button class="next-btn">▶</button>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- Add Scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="swiper-slide" id="tsa7">
+                    <img src="tsa7.png" alt="TSA 7">
+                    <h3>TSA 7</h3>
+                    <div class="circle-buttons">
+                        <button class="prev-btn">◀</button>
+                        <button class="next-btn">▶</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="tsa8">
+                    <img src="tsa8.png" alt="TSA 8">
+                    <h3>TSA 8</h3>
+                    <div class="circle-buttons">
+                        <button class="prev-btn">◀</button>
+                        <button class="next-btn">▶</button>
+                    </div>
                 </div>
             </div>
-        </section>
-
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+</section>
         <section id="contact">
             <h2>CONTACTS: </h2>
             <div class="contact-content">
@@ -237,36 +236,44 @@
     <script>
         var swipers = [];
 
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll('.swiper-container').forEach(function(element) {
-                var swiper = new Swiper(element, {
-                    slidesPerView: 'auto',
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    scrollbar: {
-                        el: '.swiper-scrollbar',
-                    },
-                });
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.swiper-container').forEach(function(element, index) {
+        var swiper = new Swiper(element, {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
 
-                swipers.push(swiper);
+        swipers.push(swiper);
+
+        // Setup navigation buttons for each project section
+        var nextButtons = document.querySelectorAll('.swiper-container').item(index).querySelectorAll('.next-btn');
+        var prevButtons = document.querySelectorAll('.swiper-container').item(index).querySelectorAll('.prev-btn');
+
+        nextButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                swiper.slideNext();
             });
         });
 
-        // Function to show/hide swiper slides based on button click
-        function nextSlide(index) {
-            swipers[index].slideNext();
-        }
+        prevButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                swiper.slidePrev();
+            });
+        });
+    });
+});
 
-        function prevSlide(index) {
-            swipers[index].slidePrev();
-        }
     </script>
 </body>
 </html>
