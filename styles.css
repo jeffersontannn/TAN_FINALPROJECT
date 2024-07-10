@@ -1,15 +1,14 @@
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Change body background to white */
-    color: black; /* Change body text color to black */
+    background-color: #ffffff; 
+    color: black; 
 }
 
-/* Navigation styles */
+
 nav {
-    background-color: #002166;
+    background-color: #ffffff;
     color: #fff;
     padding: 1rem 0;
 }
@@ -25,19 +24,19 @@ nav .container {
 
 .logo {
     flex: 1;
-    text-align: left; /* Align the logo to the left */
+    text-align: left; 
 }
 
 .logo h1 {
     margin: 0;
-    color: #fff; /* White font color */
+    color: #fff; 
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: flex-end;
 }
 
 .nav-links li {
@@ -45,28 +44,27 @@ nav .container {
 }
 
 .nav-links a {
-    color: #fff; /* White font color */
+    color: #fff; 
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ccc; /* Lighter color on hover */
+    color: #ccc; 
 }
 
-/* Section styles */
+
 section {
     padding: 2rem 0;
     text-align: center;
-    border: 2px solid black; /* Black border */
-    background-color: white; /* Change section background to white */
-    color: black; /* Change section text color to black */
+    border: 2px solid black;
+    background-color: #ffffff; 
+    color: #040000; 
     margin: 2rem auto;
     max-width: 800px;
 }
 
-/* Align the content of the sections to the center */
 section h2, section p {
     margin: 0 auto;
 }
@@ -89,7 +87,7 @@ section h2, section p {
     margin: 1rem;
 }
 
-/* Home section styles */
+
 .home-content {
     display: flex;
     flex-direction: column;
@@ -108,7 +106,6 @@ section h2, section p {
     margin: 0.5rem 0;
 }
 
-/* Social media styles */
 .social-media {
     margin-top: 1rem;
     text-align: center;
@@ -120,13 +117,11 @@ section h2, section p {
 }
 
 .social-media img {
-    width: 24px;  /* Adjusted width */
-    height: 24px; /* Adjusted height */
-}
+    width: 24px;  
+    height: 24px; 
 
-/* Button styles */
 .btn {
-    background-color: #002166;
+    background-color: #ffffff;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -134,7 +129,6 @@ section h2, section p {
     margin-top: 1rem;
 }
 
-/* Portfolio section styles */
 .portfolio-categories {
     margin-bottom: 2rem;
 }
@@ -149,7 +143,7 @@ section h2, section p {
     flex: 1 1 30%;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
     text-align: center;
 }
@@ -165,10 +159,10 @@ section h2, section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
     padding: 1rem;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     margin: 1rem;
 }
 
@@ -184,7 +178,6 @@ section h2, section p {
     font-weight: bold;
 }
 
-/* Contact form styles */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -206,21 +199,20 @@ form textarea {
 }
 
 .submit-btn {
-    background-color: #002166;
+    background-color: #ffffff;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
 }
 
-/* Footer styles */
 footer {
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Padding around footer content */
-    border-top: 1px solid #ddd; /* Top border with light gray color */
-    width: 100%; /* Ensure the footer spans the full width of its container */
-    position: fixed; /* Fix the footer position */
-    bottom: 0; /* Position at the bottom of the viewport */
-    background-color: white; /* Set a background color */
-    color: black; /* Change footer text color to black */
+    text-align: center; 
+    padding: 20px 0; 
+    border-top: 2px solid #ddd; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    background-color: #002166; 
+    color: black; 
 }
