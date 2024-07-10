@@ -70,13 +70,13 @@ section {
     color: #333;
 }
 
-.social-media {
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.social-media a img {
+.social-icons a img {
     width: 30px; /* Adjust the width to a smaller size */
     height: 30px; /* Adjust the height to a smaller size */
     margin: 0 5px;
