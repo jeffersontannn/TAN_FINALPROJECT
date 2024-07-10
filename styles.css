@@ -80,7 +80,7 @@ section {
 }
 
 @keyframes moveUpDown {
-    50% {
+    20% {
         transform: translateY(0); 
     }
     100% {
