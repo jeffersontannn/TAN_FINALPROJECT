@@ -76,6 +76,16 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
+    animation: moveUpDown 2s ease-in-out infinite alternate; /* Animation properties */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(5); /* Start position */
+    }
+    100% {
+        transform: translateY(-15px); /* End position */
+    }
 }
 
 .intro h1, .intro h2, .about-content h2 {
