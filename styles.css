@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: #f4f4f4;
 }
 
 header {
@@ -31,22 +32,81 @@ nav ul li a {
     text-decoration: none;
 }
 
+main {
+    margin: 20px;
+}
+
 section {
     padding: 2rem;
     border: 2px solid blue;
     margin: 10px;
-}
-
-#home {
-    background: #f4f4f4;
-}
-
-#about, #services, #portfolio, #contact, #social-media {
     background: #fff;
 }
 
-h2 {
+.home-content, .about-content, .services-content, .portfolio-categories, .portfolio-items, .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
     color: #333;
+}
+
+.typed-text {
+    color: #333;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.portfolio-item {
+    margin: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
 }
 
 footer {
@@ -54,7 +114,5 @@ footer {
     padding: 1rem 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
