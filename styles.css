@@ -45,6 +45,7 @@ section {
 
 .home-content, .about-content, .services-content, .portfolio-categories, .portfolio-items, .social-media {
     display: flex;
+    transition: transform 0.3s ease;
     flex-direction: column;
     align-items: center;
 }
@@ -59,23 +60,30 @@ section {
 
 .intro {
     display: flex;
+    transition: transform 0.3s ease;
+    padding: 20px;
     text-align: center;
 }
 
 .intro h1, .intro h2 {
     display: flex;
+    transition: transform 0.3s ease;
     text-align: center;
     color: #333;
     margin: 10px 0;
+    padding: 20px;
 }
 
 .typed-text {
     display: flex;
+    transition: transform 0.3s ease;
     color: #333;
 }
 
 .social-media {
     display: flex;
+     transition: transform 0.3s ease;
+    padding: 20px;
     justify-content: center;
     gap: 5px;
 }
