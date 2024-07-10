@@ -76,6 +76,11 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+    transform: translateY(-5px); /* Adjust the amount of movement */
 }
 
 .intro h1, .intro h2, .about-content h2 {
