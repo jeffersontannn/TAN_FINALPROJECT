@@ -6,14 +6,26 @@
     <title>Jefferson Tan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         .swiper-slide img {
-            max-width: 100%; 
+            max-width: 100%;
             height: auto; 
             display: block; 
-            margin: 0 auto;
+            margin: 0 auto; 
+        }
+
+        .swiper-slide:not(:first-child) {
+            display: none;
+        }
+
+        .portfolio-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .portfolio-buttons button {
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -84,22 +96,24 @@
         <section id="portfolio">
             <h2>PORTFOLIO: </h2>
             <div class="portfolio-categories">
-                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TANTSA6/', '_blank')">TSA 6</button>
-                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA7/', '_blank')">TSA 7</button>
-                <button class="btn" onclick="window.open('https://jeffersontannn.github.io/TAN_TSA8/', '_blank')">TSA 8</button>
+                <div class="portfolio-buttons">
+                    <button class="btn" onclick="showProject('tsa6')">TSA 6</button>
+                    <button class="btn" onclick="showProject('tsa7')">TSA 7</button>
+                    <button class="btn" onclick="showProject('tsa8')">TSA 8</button>
+                </div>
             </div>
             <div class="portfolio-items">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" id="tsa6">
                             <img src="tsa6.png" alt="TSA 6">
                             <h3>TSA 6</h3>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" id="tsa7">
                             <img src="tsa_7.png" alt="TSA 7">
                             <h3>TSA 7</h3>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" id="tsa8">
                             <img src="tsa8.png" alt="TSA 8">
                             <h3>TSA 8</h3>
                         </div>
@@ -161,7 +175,7 @@
     <footer>
         &copy; 2024 Jefferson Tan. All rights reserved.
     </footer>
-
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -179,6 +193,18 @@
                 el: '.swiper-scrollbar',
             },
         });
+
+        function showProject(projectId) {
+            var slides = document.querySelectorAll('.swiper-slide');
+            slides.forEach(function(slide) {
+                slide.style.display = 'none';
+            });
+
+            var selectedProject = document.getElementById(projectId);
+            if (selectedProject) {
+                selectedProject.style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
