@@ -19,6 +19,18 @@ body {
     }
 }
 
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 header {
     background-color: #595959; 
     color: #fff;
@@ -76,6 +88,7 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
+    animation: moveUpDown 2s infinite; /* Added animation */
 }
 
 .intro h1, .intro h2, .about-content h2 {
