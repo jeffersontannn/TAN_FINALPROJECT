@@ -88,7 +88,7 @@ section {
     height: 150px;
     display: block;
     margin: 0 auto;
-    animation: moveUpDown 2s infinite; /* Added animation */
+    animation: moveUpDown 2s infinite; 
 }
 
 .intro h1, .intro h2, .about-content h2 {
