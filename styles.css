@@ -64,7 +64,7 @@ section {
     padding: 2rem;
     border: 2px solid #3498db;
     margin: 10px;
-    background: #e6e6e6; 
+    background: #ddd8d8; 
     border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ section {
     border: 2px solid #3498db;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #e6e6e6; 
+    background: #ddd8d8; 
     margin: 10px;
     transition: transform 0.3s ease;
     text-align: center;
